@@ -1,0 +1,10 @@
+@charset "utf-8";
+#chat_window td{
+	width : 1%;
+	white-space : nowrap;
+}
+
+#chat_window caption{
+	background-color:#000;
+	color:#999;
+}

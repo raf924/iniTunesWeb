@@ -1,0 +1,6 @@
+<% if(typeof(newday) != 'undefined'){ %><hr><tr><td><%= newday %></td></tr> <% } %>
+<tr>
+	<td class="block"><% if(typeof(time) != 'undefined') {%><%= time %><% } else { %>12:00:00<%}%></td>
+    <td class="block"><%= user %></td>
+    <td class="block"><%= message %></td>
+</tr>

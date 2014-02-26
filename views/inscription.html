@@ -1,0 +1,26 @@
+<div id="registration" class="modal hide fade">
+
+	<div class="modal-header">
+    	<button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h3>Inscription</h3>
+    </div>
+	<div class="modal-body">
+               	<input id="pseudo" type="text"  onKeyUp="checkName(this.value);" placeholder="Nom d'utilisateur" required>
+                <span id="label-pseudo" class="label label-warning">Champ vide</span>
+                <br>
+                <input  id="pswd" type="password" placeholder="Mot de passe" onKeyUp="checkPassword(this.value);" required>
+                <span id="label-pswd" class="label label-warning">Champ vide</span>
+                <br>
+                <input  id="chkpswd" type="password" placeholder="Confirmer le mot de passe" onKeyUp="recheckPassword(this.value);" disabled required>
+                <span id="label-chkpswd" class="label label-warning">Veuillez saisir un mot de passe acceptable</span>
+                <br>
+                <input id="mail" type="email" placeholder="Adresse email" onKeyUp="checkMail(this.value);" required>
+                <span id="label-mail" class=" label label-warning">Champ vide</span>
+                <br>
+    			<label class="checkbox">
+      				<input id="cguChk" type="checkbox" onChange="checkCGU(this.value);" required> J'accepte de bien me comporter sur ce site, dans le cas contraire la punition sera de me faire botter le cul 666 fois par une équipe de rugbymen. Et evidemment, je confirme avoir lu et pris connaissance de l'intégralité des <a href="#cgu" data-toggle="modal">CGU</a> du site.
+    			</label>
+    			<button id="register"  onClick="register();" class="btn disabled" data-dismiss="modal">S'inscrire</button>
+    </div>
+</div>
+<script src="/inscription.js" type="text/javascript"></script>

@@ -1,0 +1,14 @@
+<form id="connect" class="navbar-form form-inline pull-right">
+    <% if(typeof(user) == 'undefined'){ %>
+    <input class="input-small" type="text" name="log_pseudo" placeholder="Identifiant">
+   	<input class="input-small" type="password" name="log_pswd" placeholder="Mot de passe">
+    <label for="remember" class="checkbox" style="color:#CCC"><input name="remember" id="remember" type="checkbox" value=true />Se souvenir de moi</label>
+  	<button type="submit" class="btn btn-primary">Se connecter</button>
+    <% } else { %>
+    <button type="submit" class="btn btn-critical">Déconnexion</button>
+    <% } %>
+</form>
+<div id="connectError" class="modal hide fade in" aria-hidden="true">
+	<div id="ConnectAlert" class="alert alert-error">Erreur de connexion : </div>
+</div>
+<script src="/connection.js" type="text/javascript"></script>

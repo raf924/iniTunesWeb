@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="/bootstrap.css" type="text/css">
+<link rel="stylesheet" href="/style.css" type="text/css">
+<meta charset="utf-8">
+<title>iniTunes</title>
+</head>
+<body>
+	<div class="container-fluid">  
+    	<div class="well">      	
+			<table id="chat_window" class="table table-hover">
+        		<caption>iniTunes chat</caption>
+			</table>
+			<form id="user_input">
+				<input id="user" type="hidden" name="user" value=<%= user %>>
+				<div class="input-append pull-right">
+					<textarea id="message" name="message" type="text" disabled></textarea>
+				    <button id="send" class="btn" type="submit">Envoyer</button>
+				</div>
+			</form>
+       </div>
+	</div>
+	<script src="/socket.io/socket.io.js"></script>
+    <script src="/chat.js"></script>
+</body>
+</html>

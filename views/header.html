@@ -1,0 +1,14 @@
+<div class="navbar navbar-inverse navbar-static-top">
+	<div class="navbar-inner">
+    	<ul class="nav">
+        	<li><a class="brand" href="http://iniTunes.fr.nf">iniTunes</a></li>
+        	<li <% if(content=='home'){ %>class="active"<% } %>><a href="/home">Accueil</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#contacts">Contacts</a></li>
+            <% if(typeof(user) == 'undefined'){ %><li><a href="#" data-toggle="modal" data-target="#registration">Inscription</a></li><% } else { %>
+            <li <% if(content=='forum'){ %>class="active" <% } %><a href="/forum">Forum</a></li><% } %>
+        </ul>
+        <% include connexion.html %>
+    </div>
+</div>
+<% include contacts.html %>
+<% include inscription.html %>
